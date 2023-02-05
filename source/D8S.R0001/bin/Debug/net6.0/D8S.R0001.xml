@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>D8S.R0001</name>
+    </assembly>
+    <members>
+        <member name="T:D8S.R0001.Documentation">
+            <summary>
+            Blog article utility Razor components.
+            </summary>
+        </member>
+        <member name="T:D8S.R0001.ArticleTitle">
+            <summary>
+            The displayed title for an article.
+            </summary>
+        </member>
+        <member name="P:D8S.R0001.ArticleTitle.Text">
+            <summary>
+            The text to be shown for the title.
+            </summary>
+        </member>
+    </members>
+</doc>
