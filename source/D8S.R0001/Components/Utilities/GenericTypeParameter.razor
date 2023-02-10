@@ -1,0 +1,19 @@
+@*Namespace specified in directory-level _Imports.razor.*@
+
+
+<AngleBrackets>@this.TypeName</AngleBrackets>
+
+
+@code{
+    /// <summary>
+    /// Supplies 'T' as the default generic type parameter name.
+    /// </summary>
+    public const string TypeName_Default = "T";
+
+
+    /// <summary>
+    /// The generic type parameter name.
+    /// </summary>
+    [Parameter]
+    public string TypeName { get; set; } = GenericTypeParameter.TypeName_Default;
+}

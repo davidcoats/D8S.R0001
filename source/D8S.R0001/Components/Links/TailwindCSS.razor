@@ -1,0 +1,15 @@
+@*Namespace specified in directory-level _Imports.razor.*@
+
+
+<a href="https://tailwindcss.com/">@this.Text</a>
+
+
+@code{
+    public const string DefaultText = "Tailwind CSS";
+
+    /// <summary>
+    /// The text to show in the link.
+    /// </summary>
+    [Parameter]
+    public string Text { get; set; } = TailwindCSS.DefaultText;
+}
