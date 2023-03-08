@@ -1,0 +1,16 @@
+@*Namespace specified in directory-level _Imports.razor.*@
+
+
+<div>
+    <pre>
+        <code>
+            @this.ChildContent
+        </code>
+    </pre>
+</div>
+
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

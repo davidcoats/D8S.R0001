@@ -1,8 +1,7 @@
 @*Namespace specified in directory-level _Imports.razor.*@
 
-
-
-&lt;@(this.ChildContent)&gt;
+@*Use a span-tag to ensure whitespace is not added around the element.*@
+<span>&lt;@(this.ChildContent)&gt;</span>
 
 
 @code{

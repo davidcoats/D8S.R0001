@@ -1,0 +1,29 @@
+﻿@*Namespace specified in directory-level _Imports.razor.*@
+
+
+<R5T.R0006.LayoutHtml>
+    <Head>
+        @*Use Tailwind CSS*@
+        <link rel="stylesheet" type="text/css" href="/css-out/tailwind.css"/>
+
+        @*Use Inter font.*@
+        <link href='https://rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
+
+        @this.Head
+    </Head>
+    <Body>
+        @this.Body
+    </Body>
+</R5T.R0006.LayoutHtml>
+
+
+@code {
+    /// <summary>
+    /// The head content for the layout.
+    /// </summary>
+    [Parameter]
+    public RenderFragment Head { get; set; }
+
+    [Parameter]
+    public RenderFragment Body { get; set; }
+}
