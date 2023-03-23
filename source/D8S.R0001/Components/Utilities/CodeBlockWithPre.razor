@@ -1,0 +1,17 @@
+@*Namespace specified in directory-level _Imports.razor.*@
+
+
+<div>
+    @*HTML 5 recommends putting <code> inside <pre>. Source: https://stackoverflow.com/questions/11742907/why-does-html5-recommend-putting-the-code-element-inside-pre*@
+    <pre>
+        <code>
+            @this.ChildContent
+        </code>
+    </pre>
+</div>
+
+
+@code{
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

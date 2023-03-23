@@ -1,3 +1,14 @@
 @*Namespace specified in directory-level _Imports.razor.*@
 
 @inherits GenericTypeParameter
+
+@{
+    base.BuildRenderTree(__builder);
+}
+
+@code {
+    public T()
+    {
+        base.TypeName = "T";
+    }
+}

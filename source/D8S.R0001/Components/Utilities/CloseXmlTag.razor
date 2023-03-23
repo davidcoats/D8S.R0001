@@ -1,7 +1,7 @@
 @*Namespace specified in directory-level _Imports.razor.*@
 
 
-<OpenXmlTag TagName="@this.TagName"/>@this.ChildContent<CloseXmlTag TagName="@this.TagName"/>
+<AngleBrackets>/@this.TagName</AngleBrackets>
 
 
 @code{
@@ -10,7 +10,4 @@
     /// </summary>
     [Parameter]
     public string TagName { get; set; }
-
-    [Parameter]
-    public RenderFragment ChildContent { get; set; }
 }

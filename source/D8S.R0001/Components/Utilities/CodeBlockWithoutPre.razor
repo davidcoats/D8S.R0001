@@ -1,13 +1,15 @@
 @*Namespace specified in directory-level _Imports.razor.*@
 
 
-<AngleBrackets>@this.ChildContent/</AngleBrackets>
+<div>
+     @*No <pre> element.*@
+    <code>
+        @this.ChildContent
+    </code>
+</div>
 
 
 @code{
-    /// <summary>
-    /// The name of the tag.
-    /// </summary>
     [Parameter]
     public RenderFragment ChildContent { get; set; }
 }

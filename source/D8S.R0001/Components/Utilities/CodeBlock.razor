@@ -1,16 +1,8 @@
 @*Namespace specified in directory-level _Imports.razor.*@
 
 
-<div>
-    <pre>
-        <code>
-            @this.ChildContent
-        </code>
-    </pre>
-</div>
+@inherits CodeBlockWithPre
 
-
-@code{
-    [Parameter]
-    public RenderFragment ChildContent { get; set; }
+@{
+    base.BuildRenderTree(__builder);
 }
