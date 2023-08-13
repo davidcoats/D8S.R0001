@@ -1,6 +1,6 @@
 using System;
 
-using R5T.T0154;
+using R5T.T0223;
 
 
 namespace D8S.R0001
@@ -8,8 +8,8 @@ namespace D8S.R0001
     /// <summary>
     /// The link to Tailwind CSS.
     /// </summary>
-    [RazorComponentMarker]
-    public partial class TailwindCSS : IRazorComponentMarker
+    [RazorLinkMarker]
+    public partial class TailwindCSS
     {
 
     }

@@ -8,7 +8,7 @@ namespace D8S.R0001.Layouts
     /// <summary>
     /// Provides Tailwind CSS functionality for all components using the layout.
     /// </summary>
-    [RazorComponentMarker]
+    [RazorLayoutMarker]
     public partial class LayoutTailwind : IRazorComponentMarker
     {
     }

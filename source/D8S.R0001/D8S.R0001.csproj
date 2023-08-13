@@ -14,6 +14,7 @@
     <ProjectReference Include="..\..\..\..\SafetyCone\R5T.R0006\source\R5T.R0006\R5T.R0006.csproj" />
     <ProjectReference Include="..\..\..\..\SafetyCone\R5T.T0131\source\R5T.T0131\R5T.T0131.csproj" />
     <ProjectReference Include="..\..\..\..\SafetyCone\R5T.T0154\source\R5T.T0154\R5T.T0154.csproj" />
+    <ProjectReference Include="..\..\..\..\SafetyCone\R5T.T0223\source\R5T.T0223\R5T.T0223.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Content Update="tailwind.contentpaths.json">
