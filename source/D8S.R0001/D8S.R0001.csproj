@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
-  <PropertyGroup>
+  <PropertyGroup Label="Main">
     <TargetFramework>net6.0</TargetFramework>
+    <NoWarn>CS1573;CS1587;CS1591;IDE0130</NoWarn>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
-    <NoWarn>1573;1587;1591</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <SupportedPlatform Include="browser" />
@@ -10,7 +10,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.11" />
   </ItemGroup>
-  <ItemGroup>
+  <ItemGroup Label="Project References">
     <ProjectReference Include="..\..\..\..\SafetyCone\R5T.R0006\source\R5T.R0006\R5T.R0006.csproj" />
     <ProjectReference Include="..\..\..\..\SafetyCone\R5T.T0131\source\R5T.T0131\R5T.T0131.csproj" />
     <ProjectReference Include="..\..\..\..\SafetyCone\R5T.T0154\source\R5T.T0154\R5T.T0154.csproj" />

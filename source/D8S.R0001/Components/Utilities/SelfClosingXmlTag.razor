@@ -1,12 +1,22 @@
+@{
+    var tagContent = Instances.Operator.Get_TagContent(
+        this.TagName,
+        this.AttributeContent);
+}
 
-
-<AngleBrackets>@this.ChildContent/</AngleBrackets>
+<AngleBrackets>@tagContent /</AngleBrackets>
 
 
 @code{
     /// <summary>
     /// The name of the tag.
     /// </summary>
+    [Parameter]
+    public string TagName { get; set; }
+
+    [Parameter]
+    public string AttributeContent { get; set; }
+
     [Parameter]
     public RenderFragment ChildContent { get; set; }
 }

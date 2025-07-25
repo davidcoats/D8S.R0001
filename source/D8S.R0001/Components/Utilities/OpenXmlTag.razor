@@ -1,6 +1,11 @@
 
+@{
+    var tagContent = Instances.Operator.Get_TagContent(
+        this.TagName,
+        this.AttributeContent);
+}
 
-<AngleBrackets>@this.TagName</AngleBrackets>
+<AngleBrackets>@tagContent</AngleBrackets>
 
 
 @code{
@@ -9,4 +14,7 @@
     /// </summary>
     [Parameter]
     public string TagName { get; set; }
+
+    [Parameter]
+    public string AttributeContent { get; set; }
 }

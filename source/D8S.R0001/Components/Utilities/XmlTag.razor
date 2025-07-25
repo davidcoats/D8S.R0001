@@ -1,6 +1,5 @@
 
-
-<OpenXmlTag TagName="@this.TagName"/>@this.ChildContent<CloseXmlTag TagName="@this.TagName"/>
+<OpenXmlTag TagName="@this.TagName" AttributeContent="@this.AttributeContent"/>@this.ChildContent<CloseXmlTag TagName="@this.TagName"/>
 
 
 @code{
@@ -9,6 +8,9 @@
     /// </summary>
     [Parameter]
     public string TagName { get; set; }
+
+    [Parameter]
+    public string AttributeContent { get; set; }
 
     [Parameter]
     public RenderFragment ChildContent { get; set; }
